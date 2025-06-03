@@ -1,0 +1,296 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	cor: var(--#fff);	
+	cor: var(--#6f6363af);	
+	cor: var(--#b9a6a6af);	
+	cor: var(--#967e7e66);	
+
+
+
+	
+}
+
+body{
+	font-family: 'Times New Roman', Times, serif;
+	margin: 0 0.4px;
+}
+
+/* .container{ */
+    /* display: grid;
+    margin: 5px;
+	grid-template-rows: 1fr, 1fr,1fr,;
+    grid-template-columns:  1fr, 1fr,1fr,1fr;
+    gap: 10px; */
+	 /* display: grid;
+    margin: 5px;
+    padding: 10px 10px 10px 10px;
+    grid-template-rows: 1fr, 1fr,1fr,1fr;
+    grid-template-columns:  1fr, 1fr,1fr,1fr;
+    row-gap: 10px;
+
+    grid-template-areas:
+    "header header header"
+    " aside main main "
+    " article article article"
+    "footer footer footer footer"
+
+    ;
+}
+
+
+header {
+	  grid-area: .header;
+
+}
+
+main {
+	  grid-area: main;
+
+}
+
+aside {
+	  grid-area: aside;
+
+}
+
+article {
+	  grid-area: article;
+
+}
+
+footer{
+	grid-area: footer;
+} */
+
+.header {
+  /* background-color: #f2f2f2; */
+  height: 20vh;
+  margin-top: 20px;
+}
+
+.header .nav-list  li {
+	list-style: none;
+
+}
+
+.header .nav-list li a{
+	text-decoration: none;
+	color: rgba(27, 25, 25, 0.934);
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 1.3rem;
+}
+
+ .header img{
+  max-width: 100%;
+  height: 15vh;
+  margin-top: 10px;
+ 
+}
+
+.nav , img{
+	text-align: center;
+}
+
+main img{
+  max-width: 100%;
+  height: 71px;
+}
+
+  .video-container {
+	    margin-top:1.875rem;
+        position: relative;
+        padding-bottom: 56.25%; 
+        padding-top: 30px; 
+        height: 0;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+	main h1{
+		margin-top: 3.75rem ;
+		margin-bottom: 1.25rem ;
+		text-align: center;
+		
+	}
+
+	main p{
+		text-align: justify;
+		padding: 0 10px;
+		line-height: 1.5rem;
+		text-align: 16px;
+		font-weight: 400;
+		font-size: 1rem;
+	}
+
+	article , h2  {
+		padding-top: 1.875rem ;
+		text-align: center;
+	}
+
+	article .linha{
+		
+     width: 50%;         
+     margin: 20px auto;  
+     border: 1px solid #000; 
+
+
+		
+	}
+
+	article p{
+		text-align: justify;
+		padding: 0 10px;
+		line-height: 1.5rem;
+		font-size: 1rem;
+		font-weight: 400;
+		padding-top: 1.25rem;
+
+	}
+
+	.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 16px; 
+
+        
+
+
+	}
+
+	article section img{
+		padding-top: 0.938rem;
+		
+	} 
+
+	.voluntario{
+		height: 100%;
+		padding-bottom: 50px;
+	}
+
+	aside{
+	background-image: url(/img/igreja\ pelo\ mundo.jpg) ;
+	background-size: cover ; 
+
+	}
+
+	aside h2{
+	   padding-bottom: 1.25rem;
+	}
+
+	aside .paragrafo{
+	   padding: 0.938rem;
+
+	}
+
+	.aside  ul, li{
+		color: #f0f0f0; 
+	}
+
+	.aside .paragrafo{
+		text-align: justify;
+		padding: 0 10px;
+		line-height: 1.5rem;
+		font-size: 1rem;
+		font-weight: 400;
+		padding-top: 1.25rem;
+
+	}
+
+	.aside h3, p{
+		color: #000;
+	}
+
+	aside h4{
+		text-transform: uppercase;
+	}
+
+	.aside{
+		padding: 0.938rem;
+		text-align: justify;
+		font-weight: 200;
+		font-size: 0.875rem;
+		line-height: 1.5rem;
+		font-size: 1rem;
+
+	}
+
+	.aside .navigation li{
+		list-style-type:disc;
+		list-style-position: inside;		
+	}
+   
+	.aside h3, h4{
+		font-size: 1.063rem;
+	}
+
+	footer{
+    text-align: center;
+	padding: 1.25rem;
+    background-color: #f0f0f0; 
+    color: #333;
+	
+	}
+
+	footer p{
+		line-height: 1.5rem;
+	}
+
+.img-direita {
+  float: right;
+  margin-left: 1.25rem;
+}
+	
+
+
+  @media screen and (max-width:780px){
+	
+  article section img{
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;		
+}
+
+
+.voluntario{
+	height: auto;
+
+}
+
+  }
+
+  @media (min-width: 1024px) {
+  .video-container {
+    /* width: 1280px;
+    height: 720px; */
+
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  }
+
+  main p{
+	padding-bottom: 1.5rem;
+  }
+
+  .africa{
+	padding-bottom: 20px;
+  }
+}
+
